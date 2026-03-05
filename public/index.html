@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Smart Home Dashboard</title>
+<link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+        <h2>🏠 SmartHome</h2>
+
+        <nav>
+            <a class="active">Dashboard</a>
+            <a>Living Room</a>
+            <a>Bedroom</a>
+            <a>Kitchen</a>
+            <a>Settings</a>
+        </nav>
+
+        <div class="version">
+            v1.0
+        </div>
+    </aside>
+
+
+    <main class="content">
+
+        <header class="topbar">
+            <h1>Dashboard</h1>
+        </header>
+
+
+        <div class="devices">
+
+            <div class="device-card">
+                <h3>💡 Light</h3>
+                <p id="lightStatus">Loading...</p>
+
+                <div class="buttons">
+                    <button onclick="turnOn()">ON</button>
+                    <button onclick="turnOff()">OFF</button>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>
